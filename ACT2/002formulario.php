@@ -21,4 +21,26 @@ foreach ($menus as $me) {
     echo $me."<br>";
 }
 
+echo "<table class='table'>
+<thead>
+  <tr>
+    <th scope='col'>Nombre</th>
+    <th scope='col'>Apellidos</th>
+    <th scope='col'>Email</th>
+    <th scope='col'>URL</th>
+    <th scope='col'>Sexo</th>
+    <th scope='col'>Afición</th>
+    <th scope='col'>Menús</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td scope='row'>".$nombre."</td>
+    <td>".$apellidos."</td>
+    <td>".$email."</td>
+    <td>".$url."</td>
+  </tr>
+</tbody>
+</table>"
+
 ?>
