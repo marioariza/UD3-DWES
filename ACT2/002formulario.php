@@ -1,10 +1,10 @@
 <?php 
 
-echo $_GET['nombre']."<br>";
-echo $_GET['apellidos']."<br>";
-echo $_GET['email']."<br>";
-echo $_GET['url']."<br>";
-echo $_GET['familia']."<br>";
+$nombre = $_GET['nombre']."<br>";
+$apellidos = $_GET['apellidos']."<br>";
+$email = $_GET['email']."<br>";
+$url = $_GET['url']."<br>";
+$familia = $_GET['familia']."<br>";
 
 $sexos = $_GET['sexo'];
 foreach ($sexos as $sex) {
@@ -16,5 +16,9 @@ foreach ($aficiones as $afi) {
     echo $afi."<br>";
 }
 
+$menus = $_GET['menus'];
+foreach ($menus as $me) {
+    echo $me."<br>";
+}
 
 ?>

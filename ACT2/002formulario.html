@@ -10,39 +10,50 @@
 </head>
 <body>
     <form action="002formulario.php" method="get" class="formulario_act2">
-        <div class="mb-3 w-25">
+        <div class="mb-3 w-50">
             <label for="nombre" class="form-label titulos_act2">Nombre:</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre...">
         </div>
-        <div class="mb-3 w-25">
+        <div class="mb-3 w-50">
             <label for="apellidos" class="form-label titulos_act2">Apellidos:</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" name="apellidos" placeholder="Apellidos...">
         </div>
-        <div class="mb-3 w-25">
+        <div class="mb-3 w-50">
             <label for="email" class="form-label titulos_act2">Email:</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="nombre@ejemplo.com">
         </div>
-        <div class="mb-3 w-25">
+        <div class="mb-3 w-50">
             <label for="url" class="form-label titulos_act2">URL página personal:</label>
             <input type="url" class="form-control" id="exampleFormControlInput1" name="url" placeholder="https://www.ejemplo.com">
         </div>
-        <div class="mb-3 w-25">
+        <div class="mb-3 w-50">
             <label for="familia" class="form-label titulos_act2">Número de convivientes en el domicilio:</label>
             <input type="number" class="form-control" id="exampleFormControlInput1" name="familia" min="1" max="15" value="1">
         </div>
-        <div class="mb-3 w-25">
+        <div class="mb-3 w-50">
             <p class="titulos_act2">Sexo:</p>
             <p><input class="form-check-input" type="radio" name="sexo[]" value="Hombre" id="flexRadioDefault1">Hombre</p>
             <p><input class="form-check-input" type="radio" name="sexo[]" value="Mujer" id="flexRadioDefault1">Mujer</p>
         </div>
-        <div class="mb-3 w-25">
+        <div class="mb-3 w-50">
             <p class="titulos_act2">Aficiones:</p>
             <p><input class="form-check-input" type="checkbox" name="aficion[]" value="Deportes" id="flexCheckDefault">Deportes</p>
             <p><input class="form-check-input" type="checkbox" name="aficion[]" value="Gastronomía" id="flexCheckDefault">Gastronomía</p>
             <p><input class="form-check-input" type="checkbox" name="aficion[]" value="Música" id="flexCheckDefault">Música</p>
             <p><input class="form-check-input" type="checkbox" name="aficion[]" value="Arte" id="flexCheckDefault">Arte</p>
             <p><input class="form-check-input" type="checkbox" name="aficion[]" value="Lectura" id="flexCheckDefault">Lectura</p>
-        </div><div class="mb-3 w-25">
+        </div>
+        <div class="mb-3 w-50">
+            <p class="titulos_act2">Menú favorito:</p>
+            <p><select name="menus[]" multiple="true">
+                <option value="Carne">Filete con salsa verde</option>
+                <option value="Carne">Pescado a la plancha</option>
+                <option value="Carne">Ensalada con atún y tomate</option>
+                <option value="Carne">Montadito Piripi con patatas</option>
+                <option value="Carne">Risotto de setas</option>
+            </select></p>
+        </div>
+        <div class="mb-3 w-50">
             <button type="submit" class="btn btn-primary">Enviar datos</button>
         </div>
     </form>
