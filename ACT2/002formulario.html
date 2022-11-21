@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Actividad 2 - UD3 - DWES</title>
+</head>
+<body>
+    <h1 class="formulario_act2">FORMULARIO EJERCICIO 2</h1>
+    <br>
+    <form action="002formulario.php" method="post" class="formulario_act2">
+        <div class="mb-3 w-25">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="Nombre...">
+        </div>
+        <div class="mb-3 w-25">
+            <label for="apellidos" class="form-label">Apellidos:</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="apellidos" placeholder="Apellidos...">
+        </div>
+        <div class="mb-3 w-25">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="mb-3 w-25">
+            <label for="url" class="form-label">URL página personal:</label>
+            <input type="url" class="form-control" id="exampleFormControlInput1" name="url" placeholder="https://www.ejemplo.com">
+        </div>
+        <div class="mb-3 w-25">
+            <p>Sexo:</p>
+            <input for="sexo" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1" name="sexo">Hombre</label>
+            <br>
+            <input for="sexo" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1" name="sexo">Mujer</label>
+        </div>
+        <div class="mb-3 w-25">
+            <p>Aficiones:</p>
+            <input for="aficion" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion">Deportes</label>
+            <br>
+            <input for="aficion" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion">Gastronomía</label>
+            <br>
+            <input for="aficion" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion">Música</label>
+            <br>
+            <input for="aficion" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion">Arte</label>
+            <br>
+            <input for="aficion" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion">Lectura</label>
+        </div>
+        <div class="mb-3 w-25">
+            <p>Aficiones:</p>
+            <input for="aficion[]" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion[]">Deportes</label>
+            <br>
+            <input for="aficion[]" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion[]">Gastronomía</label>
+            <br>
+            <input for="aficion[]" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion[]">Música</label>
+            <br>
+            <input for="aficion[]" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion[]">Arte</label>
+            <br>
+            <input for="aficion[]" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault" name="aficion[]">Lectura</label>
+        </div><div class="mb-3 w-25">
+            <button type="submit" class="btn btn-primary">Enviar datos</button>
+        </div>
+    </form>
+</body>
+</html>
