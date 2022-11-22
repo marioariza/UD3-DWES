@@ -25,7 +25,7 @@ if (!isset($_SESSION['user'])) {
             </h1>
             <p class="ml-5"><a href="../ACT13/013logout.php">Pulse aquí para salir </a> </p>
             <p class="ml-5">
-                <a href="012peliculas.php">Volver al Inicio <i class="bi bi-house"></i></a></p>
+                <a href="../ACT12/012peliculas.php">Volver al Inicio <i class="bi bi-house"></i></a></p>
             <h2>Listado de películas<i class="bi bi-cart2"></i></h2>
             <ul class="m-4">
                 <li>Harry Potter y la piedra filosofal</li>
