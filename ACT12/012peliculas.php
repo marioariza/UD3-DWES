@@ -16,6 +16,7 @@ if (!isset($_SESSION['user'])) {
     <title>Listado de productos</title>
     <link rel="stylesheet" href="../css/custom.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Actividad 12 - UD3 - DWES</title>
 </head>
 
 <body>
