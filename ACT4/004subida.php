@@ -14,13 +14,12 @@ if (isset($_FILES['archivo'])) {
 
     if (empty($errors) == true) {
         move_uploaded_file($archivo_tmp, "../files/".$archivo_name);
-        echo "La imagen se ha guardado correctamente";
+        echo "La imagen se ha guardado correctamente.";
     } else {
         print_r($errors);
     }
 }
 
-$archivo_name = $_FILES['archivo']['name'];
 $ancho = $_POST['ancho'];
 $alto = $_POST['alto'];
 
