@@ -1,16 +1,12 @@
 <?php
-$cookie_name = "user";
-$cookie_value = 0;
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
-?>
-<html>
-<body>
-
-<?php
-if(!isset($_COOKIE[$cookie_name])) {
-     echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-     echo "Cookie '" . $cookie_name . "' is set!<br>";
-     echo "Value is: " . $_COOKIE[$cookie_name];
+if ( isset( $_COOKIE['visitas'] ) ) {
+    setcookie('visitas', $_COOKIE['visitas'] + 1, time() + 3600 * 24 );
+    $mensaje = 'Numero de visitas a la página: '.$_COOKIE['visitas'];
+    echo $mensaje;
+}
+else {
+    setcookie( 'visitas', 1, time() + 3600 * 24 );
+    $mensaje = 'Bienvenido por primera vez a nuesta web';
+    echo $mensaje;
 }
 ?>
